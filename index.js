@@ -9,8 +9,6 @@ function logDriverNames(drivers) {
 function logDriversByHometown(drivers, location) {
   let homies = drivers.filter(driver => driver.hometown === location);
 
-  return homies;
-
   const callback = function (driver, i, homies) {
     console.log(`${driver.name}`)
   };
