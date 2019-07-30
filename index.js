@@ -33,3 +33,15 @@ function driversByName(drivers) {
 })
   return names;
 }
+
+function totalRevenue(drivers) {
+  let totalRevenue = 0;
+
+  drivers.forEach(function (revenue) {
+    totalRevenue += driver.revenue;
+  });
+
+  return totalRevenue;
+};
+
+
