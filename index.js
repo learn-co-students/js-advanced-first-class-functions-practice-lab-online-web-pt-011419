@@ -44,4 +44,10 @@ function totalRevenue(drivers) {
   return totalRevenue;
 };
 
+function averageRevenue(drivers){
+  let total = totalRevenue(drivers);
+
+  return total/drivers.length;
+}
+
 
