@@ -14,3 +14,11 @@ function logDriversByHometown(drivers, location) {
   };
     homies.forEach(callback);
 }
+
+function driversByRevenue(drivers) {
+ let earners = drivers.sort(function(a, b) {
+    return a.revenue - b.revenue;
+});
+
+  return earners;
+}
